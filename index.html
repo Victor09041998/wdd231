@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="WDD231 Course Home Page">
+  <meta name="author" content="Victor Godspower Uduma">
+  <title>WDD231 Course Home Page</title>
+  <link rel="stylesheet" href="styles/project.css">
+  <script src="/scripts/project.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <img src="images/picture.jpg" alt="Victor Godspower Uduma" width="200" height="200">
+      <h1>Victor Godspower Uduma</h1>
+      <button id="hamburger" aria-label="Toggle Navigation" aria-expanded="false">
+        &#9776;
+      </button>
+    </div>  
+    <nav class="navigation">
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="#">Chamber</a></li>
+        <li><a href="#">GitHub Profile</a></li>
+        <li><a href="https://linkedin.com/in/victor-uduma-0a08401ab">LinkedIn</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="card-container">
+      <div class="card card-large">
+        <div class="card-header">Course Work</div>
+        <div class="card-content">
+          <ul>
+            <li>1. WDD130</li>
+            <li>2. CSE230</li>
+            <li>3. WDD231</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card card-small">
+        <div class="card-header">Home Town</div>
+        <div class="card-content">
+          <img src="images/Abia.jpg" alt="Image" class="card-image" width="280" height="280">
+        </div>
+      </div>  
+    </div>      
+    <div class="card-container">
+      <div class="card card-full">
+        <div class="card-header">Web and Computer Programming Certificate</div>
+        <div class="card-content">
+          <div id="course-actions">
+            <button onclick="filterCourses('all')">All Courses</button>
+            <button onclick="filterCourses('WDD')">WDD Courses</button>
+            <button onclick="filterCourses('CSE')">CSE Courses</button>
+          </div>
+        </div>
+        <button onclick="filterCourses('WDD')">WDD130</button>
+        <button onclick="filterCourses('CSE')">CSE210</button>
+        <button onclick="filterCourses('WDD')">WDD231</button>
+        <button onclick="filterCourses('GESCI')">GESCI110</button>
+        <button onclick="filterCourses('REL')">REL250A</button>
+      </div>
+    </div>      
+  </main>
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Victor Godspower Uduma, Abia State, Nigeria.</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
