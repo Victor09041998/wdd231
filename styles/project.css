@@ -21,7 +21,7 @@
 
   img {
     border-radius: 50%;
-    display: flex;
+    display: block;
   }
 
   .card {
@@ -29,7 +29,7 @@
     padding: 10px;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    margin: 0 10px;
+    margin: 5PX 10px;
     text-align: left;
     gap: 100px;
   }
@@ -37,7 +37,6 @@
   .card-image {
     display: block;
     width: 90%; 
-    max: width 130%; ; 
     height: auto;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -45,7 +44,7 @@
   
   h1{
     text-align: center;
-    padding-left: 400px;
+    padding-left: 330px;
   }
   
   .nav-container {
@@ -116,7 +115,6 @@
   .card-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin-top: 30px;
     width: 80%;
     max-width: 1200px;
     margin: auto;
@@ -127,11 +125,11 @@
 
   .card-large {
     grid-column: auto;
-    height: 300px;
+    height: 400px;
 }
 
 .card-small {
-    height: 300px;
+    height: 400px;
     
 }
 

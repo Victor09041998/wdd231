@@ -8,15 +8,21 @@ document.addEventListener("DOMContentLoaded", () => {
         navLinks.classList.toggle("show");
     });
   
-    const currentYearSpan = document.getElementById("currentyear");
+    const currentYearSpan = document.getElementById("currentYear");
     const lastModifiedParagraph = document.getElementById("lastModified");
   
-    const currentYear = new Date().getFullYear();
-    currentYearSpan.textContent = currentYear;  // Sets current year in the footer
-  
+    if (currentYearSpan) {
+        const currentYear = new Date().getFullYear();
+        currentYearSpan.textContent = currentYear;  // Sets current year in the footer
+    } else {
+        console.log('Current Year span not found');
+    }
+
     // Update last modified date
     if (lastModifiedParagraph) {
         lastModifiedParagraph.textContent = `Last Modified: ${document.lastModified}`;
+    } else {
+        console.log('Last Modified paragraph not found');
     }
   
     const courses = [

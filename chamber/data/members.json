@@ -1,0 +1,59 @@
+[
+    {
+      "name": "ABC Corp",
+      "address": "123 Main St, Cityville",
+      "phone": "(123) 456-7890",
+      "website": "https://abc.com",
+      "image": "abc-corp.jpg",
+      "membership_level": 1
+    },
+    {
+      "name": "XYZ Enterprises",
+      "address": "456 Oak St, Townville",
+      "phone": "(987) 654-3210",
+      "website": "https://xyz.com",
+      "image": "xyz-enterprises.jpg",
+      "membership_level": 2
+    },
+    {
+      "name": "LMN Ltd.",
+      "address": "789 Pine St, Villagetown",
+      "phone": "(555) 123-4567",
+      "website": "https://lmn.com",
+      "image": "lmn-ltd.jpg",
+      "membership_level": 3
+    },
+    {
+      "name": "Tech Solutions",
+      "address": "234 Elm St, Techcity",
+      "phone": "(111) 222-3333",
+      "website": "https://techsolutions.com",
+      "image": "tech-solutions.jpg",
+      "membership_level": 1
+    },
+    {
+      "name": "Creative Designs",
+      "address": "567 Maple St, Artville",
+      "phone": "(444) 555-6666",
+      "website": "https://creativedesigns.com",
+      "image": "creative-designs.jpg",
+      "membership_level": 2
+    },
+    {
+      "name": "Foodies Inc.",
+      "address": "890 Birch St, Foodtown",
+      "phone": "(333) 444-5555",
+      "website": "https://foodiesinc.com",
+      "image": "foodies-inc.jpg",
+      "membership_level": 3
+    },
+    {
+      "name": "Builders Co.",
+      "address": "123 Construction Rd, Buildcity",
+      "phone": "(777) 888-9999",
+      "website": "https://buildersco.com",
+      "image": "builders-co.jpg",
+      "membership_level": 2
+    }
+  ]
+  
