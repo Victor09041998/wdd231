@@ -138,6 +138,7 @@
 .card-full {
     grid-column: span 4;
     height: auto;
+    max-width: 100%;
 }
 
   .card-header {
