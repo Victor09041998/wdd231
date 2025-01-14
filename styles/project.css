@@ -1,0 +1,195 @@
+/* CSS Styles for Project Homepage */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 2;
+    background-color: #f9f9f9;
+    color: #333;
+
+  }
+  
+  /* Header Navigation */
+  header {
+    background-color: #004085;
+    color: #fff;
+  }
+
+  img {
+    border-radius: 50%;
+    display: flex;
+  }
+
+  .card {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 0 10px;
+    text-align: left;
+  }
+
+  .card-image {
+    display: block;
+    width: 100; 
+    max-width: 50; 
+    height: 100;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  h1{
+    text-align: center;
+    padding-left: 400px;
+  }
+  
+  .nav-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .navigation {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-links {
+    background-color: #333;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+    padding: 1rem;
+    width: 100%;
+    align-items: center;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .nav-links a:hover,
+  .nav-links .active {
+    background-color: #0056b3;
+  }
+  
+  #hamburger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  /* Responsive Navigation */
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+    }
+  
+    .nav-links.show {
+      display: flex;
+    }
+  
+    #hamburger {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+}
+
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 30px;
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+    gap: 10px;
+    border: #333;
+    border-radius: 30px;
+  }
+
+  .card-large {
+    grid-column: auto;
+    height: 500px;
+}
+
+.card-small {
+    height: 500px;
+    
+}
+
+/* Styles for the third card */
+.card-full {
+    grid-column: span 4;
+    height: auto;
+}
+
+  .card-header {
+    background-color: #0073e6;
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .card-content {
+    padding: 100px;
+    font-size: 16px;
+    color: #333;
+    justify-content: center;
+    display: flex;
+  }
+
+  @media (max-width: 768px) {
+    .card-container {
+      flex-direction: row;
+    }
+  }
+
+  
+  h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #004085;
+  }
+  
+  button {
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #004085;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #004085;
+    color: #fff;
+    font-size: 0.9rem;
+  }
+  
