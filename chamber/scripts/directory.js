@@ -1,40 +1,45 @@
-document.addEventListener('DOMContentLoaded', () => {
-    // Display current year and last modified date in the footer
-    document.getElementById('currentyear').textContent = new Date().getFullYear();
-    document.getElementById('lastModified').textContent = `Last modified: ${document.lastModified}`;
-  
-    const memberList = document.getElementById('member-list');
-    const toggleButton = document.getElementById('toggleView');
-  
-    // Fetch members data from the JSON file
-    async function fetchMembers() {
-      const response = await fetch('data/members.json');
-      const members = await response.json();
-      displayMembers(members);
+// Function to fetch member data from the JSON file
+async function loadMembers() {
+    try {
+        const response = await fetch('data/members.json');
+        const data = await response.json();
+        displayMembers(data);
+    } catch (error) {
+        console.error("Error fetching member data:", error);
     }
-  
-    function displayMembers(members) {
-      memberList.innerHTML = '';
-      members.forEach(member => {
-        const card = document.createElement('div');
-        card.classList.add('card');
-        card.innerHTML = `
-          <img src="images/${member.image}" alt="${member.name}">
-          <h3>${member.name}</h3>
-          <p>${member.address}</p>
-          <p>${member.phone}</p>
-          <a href="${member.website}" target="_blank">Visit Website</a>
+}
+
+// Function to display members in either grid or list view
+function displayMembers(members) {
+    const directoryList = document.getElementById('directory-list');
+    directoryList.innerHTML = ''; // Clear current list
+
+    members.forEach(member => {
+        const memberCard = document.createElement('div');
+        memberCard.classList.add('member-card');
+        
+        memberCard.innerHTML = `
+            <img src="images/${member.image}" alt="${member.name}">
+            <h3>${member.name}</h3>
+            <p>${member.address}</p>
+            <p>${member.phone}</p>
+            <p><a href="${member.website}" target="_blank">Website</a></p>
         `;
-        memberList.appendChild(card);
-      });
-    }
-  
-    // Toggle between grid and list view
-    toggleButton.addEventListener('click', () => {
-      memberList.classList.toggle('grid-view');
-      memberList.classList.toggle('list-view');
+        
+        directoryList.appendChild(memberCard);
     });
-  
-    fetchMembers();
-  });
-  
+}
+
+// Function to toggle between grid and list view
+document.getElementById('toggleView').addEventListener('click', () => {
+    const directoryList = document.getElementById('directory-list');
+    directoryList.classList.toggle('grid-view');
+    directoryList.classList.toggle('list-view');
+});
+
+// Display current year and last modified date
+document.getElementById('copyright-year').textContent = new Date().getFullYear();
+document.getElementById('last-modified').textContent = document.lastModified;
+
+// Load the member data when the page is ready
+loadMembers();

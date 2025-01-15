@@ -1,59 +1,58 @@
 [
     {
-      "name": "ABC Corp",
-      "address": "123 Main St, Cityville",
-      "phone": "(123) 456-7890",
-      "website": "https://abc.com",
-      "image": "abc-corp.jpg",
-      "membership_level": 1
+        "name": "Company A",
+        "address": "123 Main St, City, State, ZIP",
+        "phone": "123-456-7890",
+        "website": "http://companyA.com",
+        "image": "companyA.jpg",
+        "membershipLevel": 1
     },
     {
-      "name": "XYZ Enterprises",
-      "address": "456 Oak St, Townville",
-      "phone": "(987) 654-3210",
-      "website": "https://xyz.com",
-      "image": "xyz-enterprises.jpg",
-      "membership_level": 2
+        "name": "Company B",
+        "address": "456 Oak St, City, State, ZIP",
+        "phone": "234-567-8901",
+        "website": "http://companyB.com",
+        "image": "companyB.jpg",
+        "membershipLevel": 2
     },
     {
-      "name": "LMN Ltd.",
-      "address": "789 Pine St, Villagetown",
-      "phone": "(555) 123-4567",
-      "website": "https://lmn.com",
-      "image": "lmn-ltd.jpg",
-      "membership_level": 3
+        "name": "Company C",
+        "address": "789 Pine St, City, State, ZIP",
+        "phone": "345-678-9012",
+        "website": "http://companyC.com",
+        "image": "companyC.jpg",
+        "membershipLevel": 3
     },
     {
-      "name": "Tech Solutions",
-      "address": "234 Elm St, Techcity",
-      "phone": "(111) 222-3333",
-      "website": "https://techsolutions.com",
-      "image": "tech-solutions.jpg",
-      "membership_level": 1
+        "name": "Company D",
+        "address": "101 Maple St, City, State, ZIP",
+        "phone": "456-789-0123",
+        "website": "http://companyD.com",
+        "image": "companyD.jpg",
+        "membershipLevel": 1
     },
     {
-      "name": "Creative Designs",
-      "address": "567 Maple St, Artville",
-      "phone": "(444) 555-6666",
-      "website": "https://creativedesigns.com",
-      "image": "creative-designs.jpg",
-      "membership_level": 2
+        "name": "Company E",
+        "address": "202 Birch St, City, State, ZIP",
+        "phone": "567-890-1234",
+        "website": "http://companyE.com",
+        "image": "companyE.jpg",
+        "membershipLevel": 2
     },
     {
-      "name": "Foodies Inc.",
-      "address": "890 Birch St, Foodtown",
-      "phone": "(333) 444-5555",
-      "website": "https://foodiesinc.com",
-      "image": "foodies-inc.jpg",
-      "membership_level": 3
+        "name": "Company F",
+        "address": "303 Cedar St, City, State, ZIP",
+        "phone": "678-901-2345",
+        "website": "http://companyF.com",
+        "image": "companyF.jpg",
+        "membershipLevel": 3
     },
     {
-      "name": "Builders Co.",
-      "address": "123 Construction Rd, Buildcity",
-      "phone": "(777) 888-9999",
-      "website": "https://buildersco.com",
-      "image": "builders-co.jpg",
-      "membership_level": 2
+        "name": "Company G",
+        "address": "404 Elm St, City, State, ZIP",
+        "phone": "789-012-3456",
+        "website": "http://companyG.com",
+        "image": "companyG.jpg",
+        "membershipLevel": 1
     }
-  ]
-  
+]
