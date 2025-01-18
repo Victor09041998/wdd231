@@ -3,43 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Chamber of Commerce Directory">
+    <meta name="description" content="Chamber of Commerce - A Resource Hub for Local Businesses">
     <meta name="author" content="Victor Godspower Uduma">
-    
-    <!-- Facebook meta settings -->
     <meta property="og:title" content="Chamber of Commerce Directory">
     <meta property="og:type" content="website">
     <meta property="og:image" content="images/og-image.jpg">
     <meta property="og:url" content="http://yourwebsite.com/chamber/directory.html">
-    
     <title>Chamber of Commerce Directory</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="/chamber/styles/directory.css">
+    <link rel="icon" href="favicon.ico/commerce.png" type="image/x-icon">
+    <link rel="stylesheet" href="/chamber/styles/normalize.css">
+    <link rel="stylesheet" href="styles/directory.css">
+    <script src="scripts/directory.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>Chamber of Commerce Directory</h1>
+        <h1>Clyne</h1>
+        <h4>Chamber of Commerce</h4>
         <nav>
             <ul>
-                <li><a href="directory.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html" aria-label="Home">Home</a></li>
+                <li><a href="directory.html" aria-label="Directory">Directory</a></li>
+                <li><a href="about.html" aria-label="Join">Join</a></li>
+                <li><a href="contact.html" aria-label="Discover">Discover</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section>
-            <button id="toggleView">Toggle View (Grid/List)</button>
-            <div id="directory-list" class="grid-view"></div>
+        <section class="hero">
+            <div class="hero-content"></div>
         </section>
+        <section>
+            <button id="toggleView" aria-label="Toggle between grid and list view"></button>
+            <div id="directory-list" class="grid-view" aria-live="polite"></div>
+        </section>
+        <div class="card">
+            <div class="cards-container">
+                <div class="card-header">Event</div>
+                <div class="card-content">
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-container">
+                <div class="card-header">Current Weather</div>
+                <div class="card-content">
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-container">
+                <div class="card-header">Weather Forcast</div>
+                <div class="card-content">
+                </div>
+            </div>
+        </div>
+        <button class="toggle-btn" onclick="toggleView()">Toggle View</button>
+        <div class="member-cards" id="memberCards">
+            <!-- Dynamic member data will be inserted here -->
+        </div>    
     </main>
-
     <footer>
-        <p>&copy; <span id="copyright-year"></span> Your Company. Last updated: <span id="last-modified"></span></p>
-        <p>WDD 231 - Your Name</p>
+        <p>&copy; <span id="copyright-year"></span>Chamber of Commerce. Last updated: <span id="last-modified"></span></p>
+        <p>WDD 231 - Victor Godspower Uduma</p>
     </footer>
-
-    <script src="/chamber/scripts/directory.js"></script>
 </body>
 </html>

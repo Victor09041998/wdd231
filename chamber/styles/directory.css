@@ -6,20 +6,39 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     background-color: #f4f4f4;
     color: #333;
 }
 
 header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #2d3e50;
     color: white;
     padding: 1rem;
-    text-align: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+header h4 {
+    flex-direction: column;
+    font-size: 1.2rem;
+    margin: 0.5rem;
+    margin-bottom: 0;
+    text-align: right;
 }
 
 nav ul {
     list-style-type: none;
+    display: flex;
+    margin: 0;
 }
 
 nav ul li {
@@ -30,6 +49,11 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
+    font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
 }
 
 #directory-list {
@@ -37,6 +61,7 @@ nav ul li a {
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 1rem;
+    transition: transform 0.3s ease;
 }
 
 .member-card {
@@ -66,11 +91,23 @@ button {
     color: white;
     border: none;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 button:hover {
     background-color: #1f2a36;
 }
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background-image: url('https://images.squarespace-cdn.com/content/v1/5ed54b8712824d33607048a7/1621397313577-RX7RJIONPCP5V5R8X1GI/Continuous-recruitment-4-lynne-palmer.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 
 .grid-view .member-card {
     width: calc(33% - 2rem);
@@ -88,4 +125,16 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+@media (max-width: 768px) {
+    .grid-view .member-card {
+        width: calc(50% - 2rem);
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-view .member-card {
+        width: 100%;
+    }
 }

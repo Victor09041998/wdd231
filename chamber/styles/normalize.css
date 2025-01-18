@@ -1,0 +1,35 @@
+/* Normalize or Reset CSS to ensure consistent styling across browsers */
+
+/* 1. Set default box-sizing to border-box for all elements */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* 2. Remove default margin and padding */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* 3. Set base font size and line-height */
+body {
+    font-size: 100%;
+    line-height: 1.5;
+    font-family: Arial, sans-serif;
+}
+
+/* 4. Remove default styles for lists, links, and headings */
+ul, ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}

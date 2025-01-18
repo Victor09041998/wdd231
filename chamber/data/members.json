@@ -1,58 +1,58 @@
 [
     {
-        "name": "Company A",
-        "address": "123 Main St, City, State, ZIP",
+        "name": "Timbuktu Tech Co.",
+        "address": "123 Innovation Rd, Timbuktu, State, 12345",
         "phone": "123-456-7890",
-        "website": "http://companyA.com",
-        "image": "companyA.jpg",
+        "website": "http://timbuktutechco.com",
+        "image": "timbuktu_tech_logo.jpg",
         "membershipLevel": 1
     },
     {
-        "name": "Company B",
-        "address": "456 Oak St, City, State, ZIP",
+        "name": "Green Valley Farms",
+        "address": "456 Green St, Timbuktu, State, 12345",
         "phone": "234-567-8901",
-        "website": "http://companyB.com",
-        "image": "companyB.jpg",
+        "website": "http://greenvalleyfarms.com",
+        "image": "green_valley_farms_logo.jpg",
         "membershipLevel": 2
     },
     {
-        "name": "Company C",
-        "address": "789 Pine St, City, State, ZIP",
+        "name": "Riverside Cafe",
+        "address": "789 Riverside Dr, Timbuktu, State, 12345",
         "phone": "345-678-9012",
-        "website": "http://companyC.com",
-        "image": "companyC.jpg",
+        "website": "http://riversidecafe.com",
+        "image": "riverside_cafe_logo.jpg",
         "membershipLevel": 3
     },
     {
-        "name": "Company D",
-        "address": "101 Maple St, City, State, ZIP",
+        "name": "Timbuktu Builders",
+        "address": "101 Construction Ln, Timbuktu, State, 12345",
         "phone": "456-789-0123",
-        "website": "http://companyD.com",
-        "image": "companyD.jpg",
+        "website": "http://timbuktubuilders.com",
+        "image": "timbuktu_builders_logo.jpg",
         "membershipLevel": 1
     },
     {
-        "name": "Company E",
-        "address": "202 Birch St, City, State, ZIP",
+        "name": "City Pharmacy",
+        "address": "202 Pharmacy St, Timbuktu, State, 12345",
         "phone": "567-890-1234",
-        "website": "http://companyE.com",
-        "image": "companyE.jpg",
+        "website": "http://citypharmacy.com",
+        "image": "city_pharmacy_logo.jpg",
         "membershipLevel": 2
     },
     {
-        "name": "Company F",
-        "address": "303 Cedar St, City, State, ZIP",
+        "name": "Tech Innovations Hub",
+        "address": "303 Startup St, Timbuktu, State, 12345",
         "phone": "678-901-2345",
-        "website": "http://companyF.com",
-        "image": "companyF.jpg",
+        "website": "http://techinnovationshub.com",
+        "image": "tech_innovations_hub_logo.jpg",
         "membershipLevel": 3
     },
     {
-        "name": "Company G",
-        "address": "404 Elm St, City, State, ZIP",
+        "name": "Community Bank",
+        "address": "404 Main St, Timbuktu, State, 12345",
         "phone": "789-012-3456",
-        "website": "http://companyG.com",
-        "image": "companyG.jpg",
+        "website": "http://communitybank.com",
+        "image": "community_bank_logo.jpg",
         "membershipLevel": 1
     }
 ]
