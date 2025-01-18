@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chamber of Commerce Directory">
+    <meta name="author" content="Victor Godspower Uduma">
+    
+    <title>Timbuktu Chamber of Commerce</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/example.css">
+    <script src="chamber/scripts/directory.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Timbuktu Chamber of Commerce</h1>
+        <h4>Your Trusted Local Business Network</h4>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Welcome to Timbuktu</h2>
+            <p>Supporting Local Businesses and Promoting Economic Growth</p>
+        </div>
+    </section>
+
+    <!-- Main Content Section -->
+    <main>
+        <!-- Home Section -->
+        <section class="home">
+            <h3>Home</h3>
+            <div class="cards-container">
+                <!-- Events Card -->
+                <div class="card">
+                    <h4>Upcoming Events</h4>
+                    <p>Join us for networking events and workshops.</p>
+                </div>
+
+                <!-- Current Weather Card -->
+                <div class="card">
+                    <h4>Current Weather</h4>
+                    <p>Temperature: 25°C | Sunny</p>
+                </div>
+
+                <!-- Weather Forecast Card -->
+                <div class="card">
+                    <h4>Weather Forecast</h4>
+                    <p>Tomorrow: 30°C, Partly Cloudy</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Business Directory Section -->
+        <section class="business-directory">
+            <h3>Our Business Members</h3>
+            <div class="business-cards-container">
+                <!-- Business 1 -->
+                <div class="business-card">
+                    <h4>Company A</h4>
+                    <p>123 Main St, City, State</p>
+                    <p>Phone: 123-456-7890</p>
+                    <a href="http://companyA.com" target="_blank">Visit Website</a>
+                </div>
+                <!-- Business 2 -->
+                <div class="business-card">
+                    <h4>Company B</h4>
+                    <p>456 Oak St, City, State</p>
+                    <p>Phone: 234-567-8901</p>
+                    <a href="http://companyB.com" target="_blank">Visit Website</a>
+                </div>
+                <!-- Business 3 -->
+                <div class="business-card">
+                    <h4>Company C</h4>
+                    <p>789 Pine St, City, State</p>
+                    <p>Phone: 345-678-9012</p>
+                    <a href="http://companyC.com" target="_blank">Visit Website</a>
+                </div>
+                <!-- Business 4 -->
+                <div class="business-card">
+                    <h4>Company D</h4>
+                    <p>101 Maple St, City, State</p>
+                    <p>Phone: 456-789-0123</p>
+                    <a href="http://companyD.com" target="_blank">Visit Website</a>
+                </div>
+                <!-- Business 5 -->
+                <div class="business-card">
+                    <h4>Company E</h4>
+                    <p>202 Birch St, City, State</p>
+                    <p>Phone: 567-890-1234</p>
+                    <a href="http://companyE.com" target="_blank">Visit Website</a>
+                </div>
+                <!-- Business 6 -->
+                <div class="business-card">
+                    <h4>Company F</h4>
+                    <p>303 Cedar St, City, State</p>
+                    <p>Phone: 678-901-2345</p>
+                    <a href="http://companyF.com" target="_blank">Visit Website</a>
+                </div>
+                <!-- Business 7 -->
+                <div class="business-card">
+                    <h4>Company G</h4>
+                    <p>404 Elm St, City, State</p>
+                    <p>Phone: 789-012-3456</p>
+                    <a href="http://companyG.com" target="_blank">Visit Website</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="copyright-year"></span> Timbuktu Chamber of Commerce. Last updated: <span id="last-modified"></span></p>
+    </footer>
+
+    <script>
+        document.getElementById('copyright-year').textContent = new Date().getFullYear();
+        document.getElementById('last-modified').textContent = document.lastModified;
+    </script>
+</body>
+</html>
