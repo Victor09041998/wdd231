@@ -1,0 +1,18 @@
+[
+    {
+        "name": "Fuse Animation",
+        "address": "4437 Avondale St Minnetonka, MN 55345",
+        "phone": "612-405-8000",
+        "website": "https://www.fuseanimation.com/",
+        "image": "images/Fuse-Logo.jpg",
+        "membershipLevel": "Gold"
+    },
+    {
+        "name": "Claravine",
+        "address": "770 E. Main Street #360 Lehi, Utah 84043",
+        "phone": "385-286-0800",
+        "website": "https://www.claravine.com/",
+        "image": "images/clavarine.png",
+        "membershipLevel": "Silver"
+    }
+]

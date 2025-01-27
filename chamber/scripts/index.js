@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
             if (data.main && data.weather) {
                 const temp = data.main.temp;
                 const description = data.weather[0].description;
-                document.getElementById('weather').innerHTML = `
+                document.getElementById('weather-info').innerHTML = `
                     <p>Temperature: ${temp}°C</p>
                     <p>Description: ${description}</p>
                 `;
@@ -19,39 +19,59 @@ document.addEventListener("DOMContentLoaded", () => {
         })
         .catch(error => {
             console.error('Error fetching weather data:', error);
-            document.getElementById('weather').innerHTML = `
+            document.getElementById('weather-info').innerHTML = `
                 <p>Error fetching weather data. Please try again later.</p>
             `;
         });
 
     // Fetch members data and display spotlight cards
-    fetch('data/members.json')
+    fetch('data/index.json')
         .then(response => response.json())
         .then(members => {
-            const spotlights = members.filter(member => member.membershipLevel === 'gold' || member.membershipLevel === 'silver');
-            const selectedSpotlights = [];
+            // Filter gold and silver members
+            const goldMembers = members.filter(member => member.membershipLevel === 'gold');
+            const silverMembers = members.filter(member => member.membershipLevel === 'silver');
 
-            while (selectedSpotlights.length < 2 && spotlights.length > 0) {
-                const randomIndex = Math.floor(Math.random() * spotlights.length);
-                selectedSpotlights.push(spotlights.splice(randomIndex, 1)[0]);
+            // Pick one random gold and one random silver member if available
+            const selectedSpotlights = [];
+            if (goldMembers.length > 0) {
+                const randomGold = goldMembers[Math.floor(Math.random() * goldMembers.length)];
+                selectedSpotlights.push(randomGold);
+            }
+            if (silverMembers.length > 0) {
+                const randomSilver = silverMembers[Math.floor(Math.random() * silverMembers.length)];
+                selectedSpotlights.push(randomSilver);
             }
 
-            const spotlightsSection = document.getElementById('spotlights');
+            const spotlightsSection = document.getElementById('spotlight-container');
             spotlightsSection.innerHTML = selectedSpotlights.map(member => `
                 <div class="spotlight">
                     <img src="${member.logo}" alt="${member.name} Logo">
                     <h3>${member.name}</h3>
                     <p>Phone: ${member.phone}</p>
                     <p>Address: ${member.address}</p>
-                    <p>Website: <a href="${member.website}">${member.website}</a></p>
+                    <p>Website: <a href="${member.website}" target="_blank">${member.website}</a></p>
                     <p>Membership Level: ${member.membershipLevel}</p>
                 </div>
             `).join('');
         })
         .catch(error => {
             console.error('Error fetching members data:', error);
-            document.getElementById('spotlights').innerHTML = `
+            document.getElementById('spotlight-container').innerHTML = `
                 <p>Error fetching member spotlights. Please try again later.</p>
             `;
         });
+
+    // Display current date and time
+    const updateDateTime = () => {
+        const now = new Date();
+        const year = now.getFullYear();
+        const lastModified = document.lastModified;
+
+        document.getElementById('copyright-year').textContent = year;
+        document.getElementById('last-modified').textContent = lastModified;
+    };
+
+    updateDateTime();
+    setInterval(updateDateTime, 1000);
 });
