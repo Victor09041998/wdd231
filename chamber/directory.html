@@ -11,13 +11,11 @@
     <meta property="og:url" content="http://yourwebsite.com/chamber/directory.html">
     <title>Chamber of Commerce Directory</title>
     <link rel="icon" href="favicon.ico/commerce.png" type="image/x-icon">
-    <link rel="stylesheet" href="/chamber/styles/normalize.css">
     <link rel="stylesheet" href="styles/directory.css">
     <script src="/chamber/scripts/directory.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>Clyne</h1>
         <h4>Chamber of Commerce</h4>
         <nav>
             <ul>
@@ -34,27 +32,6 @@
             <button id="toggleView" aria-label="Toggle between grid and list view"></button>
             <div id="directory-list" class="grid-view" aria-live="polite"></div>
         </section>
-        <div class="card">
-            <div class="cards-container">
-                <div class="card-header">Event</div>
-                <div class="card-content">
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-container">
-                <div class="card-header">Current Weather</div>
-                <div class="card-content">
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-container">
-                <div class="card-header">Weather Forcast</div>
-                <div class="card-content">
-                </div>
-            </div>
-        </div>
         <button class="toggle-btn" onclick="toggleView()">Toggle View</button>
         <div class="member-cards" id="memberCards">
             <!-- Dynamic member data will be inserted here -->

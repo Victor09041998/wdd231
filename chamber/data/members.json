@@ -1,58 +1,58 @@
 [
     {
-        "name": "Timbuktu Tech Co.",
-        "address": "123 Innovation Rd, Timbuktu, State, 12345",
-        "phone": "123-456-7890",
-        "website": "http://timbuktutechco.com",
-        "image": "timbuktu_tech_logo.jpg",
-        "membershipLevel": 1
+        "name": "Fuse Animation",
+        "address": "4437 Avondale St Minnetonka, MN 55345",
+        "phone": "612-405-8000",
+        "website": "https://www.fuseanimation.com/",
+        "image": "images/Fuse-Logo.jpg",
+        "membershipLevel": "Gold"
     },
     {
-        "name": "Green Valley Farms",
-        "address": "456 Green St, Timbuktu, State, 12345",
-        "phone": "234-567-8901",
-        "website": "http://greenvalleyfarms.com",
-        "image": "green_valley_farms_logo.jpg",
-        "membershipLevel": 2
+        "name": "Claravine",
+        "address": "770 E. Main Street #360 Lehi, Utah 84043",
+        "phone": "385-286-0800",
+        "website": "https://www.claravine.com/",
+        "image": "images/clavarine.png",
+        "membershipLevel": "Silver"
     },
     {
-        "name": "Riverside Cafe",
-        "address": "789 Riverside Dr, Timbuktu, State, 12345",
+        "name": "Fit Solutions",
+        "address": "550 West B Street, 4th Floor, Suite 322 San Diego, CA 92101",
         "phone": "345-678-9012",
-        "website": "http://riversidecafe.com",
-        "image": "riverside_cafe_logo.jpg",
-        "membershipLevel": 3
+        "website": "https://fitsolutions.biz/",
+        "image": "images/fit-solutions.jfif",
+        "membershipLevel": "Bronze"
     },
     {
-        "name": "Timbuktu Builders",
-        "address": "101 Construction Ln, Timbuktu, State, 12345",
-        "phone": "456-789-0123",
-        "website": "http://timbuktubuilders.com",
-        "image": "timbuktu_builders_logo.jpg",
-        "membershipLevel": 1
+        "name": "Workspace365",
+        "address": "Suite G.04, Colony, One Silk Street, Ancoats, Manchester, M4 6LZ",
+        "phone": "+ 44 161 768 6020",
+        "website": "https://workspace365.net/en/",
+        "image": "images/workspace365.jfif",
+        "membershipLevel": "Gold"
     },
     {
-        "name": "City Pharmacy",
-        "address": "202 Pharmacy St, Timbuktu, State, 12345",
+        "name": "HYAS",
+        "address": "408-55 Water Street, Office 8536 Vancouver, BC V6B 1A1, Canada",
         "phone": "567-890-1234",
-        "website": "http://citypharmacy.com",
-        "image": "city_pharmacy_logo.jpg",
-        "membershipLevel": 2
+        "website": "https://www.hyas.com/",
+        "image": "images/hyas.jfif",
+        "membershipLevel": "Silver"
     },
     {
-        "name": "Tech Innovations Hub",
-        "address": "303 Startup St, Timbuktu, State, 12345",
-        "phone": "678-901-2345",
-        "website": "http://techinnovationshub.com",
-        "image": "tech_innovations_hub_logo.jpg",
-        "membershipLevel": 3
+        "name": "ARM",
+        "address": "110 Fulbourn Road Cambridge, UK CB1 9NJ",
+        "phone": "+ 44(1223) 400 400",
+        "website": "https://www.arm.com/",
+        "image": "images/arm.jfif",
+        "membershipLevel": "Bronze"
     },
     {
-        "name": "Community Bank",
-        "address": "404 Main St, Timbuktu, State, 12345",
-        "phone": "789-012-3456",
-        "website": "http://communitybank.com",
-        "image": "community_bank_logo.jpg",
-        "membershipLevel": 1
+        "name": "Austin Technology",
+        "address": "Sydney 285A Crown St Surry Hills NSW 2010",
+        "phone": "130 078 7429",
+        "website": "https://austintechnology.com.au/",
+        "image": "images/austin.jfif",
+        "membershipLevel": "Gold"
     }
 ]
