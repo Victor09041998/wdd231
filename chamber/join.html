@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Us</title>
+    <link rel="stylesheet" href="styles/join.css">
+    <script src="scripts/join.js" defer></script>
+</head>
+<body>
+    <header>
+        <h2>Chamber Membership Join Page</h2>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html" aria-label="Home">Home</a></li>
+            <li><a href="directory.html" aria-label="Directory">Directory</a></li>
+            <li><a href="contact.html" aria-label="Discover">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Join Our Organization</h1>
+        <form action="thankyou.html" method="get">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" name="first_name" title="First Name" autocomplete="given-name" required>
+            
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="last_name" title="Last Name" autocomplete="family-name" required>
+            
+            <label for="org-title">Organizational Title</label>
+            <input type="text" id="org-title" name="org_title" title="Organizational Title" autocomplete="organization-title" pattern="[A-Za-z-\s]{7,}">
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" title="Email" autocomplete="email" placeholder="example@example.com" required>
+            
+            <label for="phone">Mobile Phone</label>
+            <input type="tel" id="phone" name="phone" title="Mobile Phone" autocomplete="tel" required>
+            
+            <label for="org-name">Business/Organization Name</label>
+            <input type="text" id="org-name" name="org_name" title="Business/Organization Name" autocomplete="organization" required>
+            
+            <label for="membership-level">Membership Level</label>
+            <select id="membership-level" name="membership_level">
+                <option value="NP Membership">NP Membership (Free for non-profits)</option>
+                <option value="Bronze Membership">Bronze Membership</option>
+                <option value="Silver Membership">Silver Membership</option>
+                <option value="Gold Membership">Gold Membership</option>
+            </select>
+            
+            <label for="description">Business/Organization Description</label>
+            <textarea id="description" name="description" title="Business/Organization Description"></textarea>
+            
+            <input type="hidden" id="timestamp" name="timestamp" value="">
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <section id="membership-cards">
+            <div class="card">
+                <h2>NP Membership</h2>
+                <h5>Non fee for non-profits.</h5>
+                <a href="#npModal">More Info</a>
+            </div>
+            <div class="card">
+                <h2>Bronze Membership</h2>
+                <h5>Basic Benefits included.</h5>
+                <a href="#bronzeModal">More Info</a>
+            </div>
+            <div class="card">
+                <h2>Silver Membership</h2>
+                <h5>Additional marketing benefits.</h5>
+                <a href="#silverModal">More Info</a>
+            </div>
+            <div class="card">
+                <h2>Gold Membership</h2>
+                <h5>Premium access and promotion.</h5>
+                <a href="#goldModal">More Info</a>
+            </div>
+        </section>
+
+        <!-- Membership Modals -->
+        <div id="npModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>NP Membership benefits...</p>
+            </div>
+        </div>
+
+        <div id="bronzeModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>Bronze Membership benefits...</p>
+            </div>
+        </div>
+
+        <div id="silverModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>Silver Membership benefits...</p>
+            </div>
+        </div>
+
+        <div id="goldModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>Gold Membership benefits...</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="copyright-year"></span>Chamber of Commerce. Last updated: <span id="last-modified"></span></p>
+        <p>WDD 231 - Victor Godspower Uduma</p>
+    </footer>
+</body>
+</html>
