@@ -1,0 +1,124 @@
+/* desktop.css */
+body {
+    font-family: 'Times New Roman', serif;
+    background-color: #f2f2f2;
+    color: #333;
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+header {
+    height: 100px;
+    text-align: center;
+    background-color: #2d3e50;
+    color: bisque;
+}
+
+nav {
+    display: flex;
+    color: antiquewhite;
+    max-width: 100%;
+}
+
+h1, h2 {
+    color: #0073e6;
+    font-family: Arial, sans-serif;
+}
+
+.image-section {
+    padding: 20px;
+    background-color: #f8f8f8;
+    text-align: center; /* Center-align the content */
+}
+
+.image-section figure {
+    margin: 0 auto;
+    width: 300px; /* Set the figure width to the desired width of the image */
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.image-section img {
+    width: 100%; /* Make the image fit within the figure */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove the inline-block gap */
+}
+
+.image-section figcaption {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #555;
+    text-align: center; /* Center-align the caption */
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+        "card1 card2 card3"
+        "card4 card5 card6"
+        "card7 card8 .";
+    gap: 20px;
+}
+
+.card:nth-child(1) { grid-area: card1; }
+.card:nth-child(2) { grid-area: card2; }
+.card:nth-child(3) { grid-area: card3; }
+.card:nth-child(4) { grid-area: card4; }
+.card:nth-child(5) { grid-area: card5; }
+.card:nth-child(6) { grid-area: card6; }
+.card:nth-child(7) { grid-area: card7; }
+.card:nth-child(8) { grid-area: card8; }
+
+.card {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.card h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.card figure {
+    margin: 0;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card address, .card p {
+    margin: 15px 0;
+}
+
+.card button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0073e6;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+footer {
+    background-color: #2d3e50;
+    color: white;
+    text-align: center;
+    padding: 0.5rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+a {
+    color: #0073e6;
+}
