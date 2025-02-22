@@ -72,3 +72,14 @@ document.querySelector('form').addEventListener('submit', event => {
 });
 
 fetchData();
+
+// Display current date and time in the footer
+function updateTime() {
+    const currentTime = new Date();
+    const options = { year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: true };
+    const formattedTime = currentTime.toLocaleString('en-US', options);
+    document.getElementById('current-time').innerText = `Current Date & Time: ${formattedTime}`;
+}
+
+setInterval(updateTime, 1000);
+updateTime(); // Initialize immediately

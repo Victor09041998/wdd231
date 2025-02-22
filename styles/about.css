@@ -1,0 +1,218 @@
+/* General Reset and Body Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header-logo {
+    max-height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a.active {
+    border-bottom: 2px solid #ff6600;
+}
+
+/* Main Section Styling */
+main {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#about-us h2, #about-us h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#about-us p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* Styling for Climate Info Section */
+#climate-info {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#climate-info h3 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+#climate-info p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #34495e;
+    margin-bottom: 20px;
+}
+
+/* Emissions Table */
+#emissions table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#emissions table th,
+#emissions table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+#emissions table th {
+    background-color: #3498db;
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+#emissions table td {
+    font-size: 1rem;
+    color: #2c3e50;
+}
+
+#emissions table tr:nth-child(even) {
+    background-color: #ecf0f1;
+}
+
+/* Temperature Rise Section */
+#temperature-rise {
+    margin-top: 30px;
+    background-color: #eaf2f8;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 5px solid #3498db;
+}
+
+#temperature-rise p {
+    font-size: 1.1rem;
+    color: #2c3e50;
+}
+
+/* Renewable Energy Section */
+#renewable-energy {
+    margin-top: 30px;
+    background-color: #eaf7e6;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 5px solid #27ae60;
+}
+
+#renewable-energy p {
+    font-size: 1.1rem;
+    color: #2c3e50;
+}
+
+#renewable-energy .highlight {
+    font-weight: bold;
+    color: #27ae60;
+}
+
+/* Global Section Styling for Consistency */
+#climate-info > div {
+    margin-bottom: 30px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    #climate-info {
+        padding: 20px;
+    }
+
+    #climate-info h3 {
+        font-size: 1.6rem;
+    }
+
+    #climate-info p {
+        font-size: 1rem;
+    }
+
+    #emissions table th,
+    #emissions table td {
+        font-size: 0.9rem;
+    }
+}
+
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+}
+
+footer a {
+    color: #ff6600;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer #current-time {
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    footer {
+        text-align: left;
+    }
+}
