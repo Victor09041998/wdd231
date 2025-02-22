@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    background-image: url('/images/background.jpg');
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color:  #0b550b;
+    color: white;
+    padding: 20px;
+    align-items: center;
+    display: flex;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5em;
+    text-align: left;
+    margin-right: auto;
+}
+
+nav ul li {
+    margin: 0 10px;
+    color: #b6b8ba;
+}
+
+nav ul li a {
+    color: #a9adb1;
+    text-decoration: none;
+}
+
+#header-logo {
+    max-height: 70px;
+    width: 60px;
+    position: relative;
+    top: 10px;
+    right: 10px;
+    margin-left: 5px;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+    margin: 70px;
+}
+
+#weather-form {
+    margin-bottom: 20px;
+}
+
+#weather-form input, #weather-form button {
+    padding: 10px;
+    font-size: 16px;
+    margin: 5px;
+}
+
+#weather-result {
+    margin-top: 20px;
+    align-content: start;
+}
+
+#weatherData {
+    margin-bottom: 20px;
+    align-items: start;
+}
+
+#city-image img.city-image {
+    width: 350px;
+    height: 350px;
+    object-fit: cover; /* This ensures the image covers the area without distorting */
+    margin-top: 20px;
+}
+
+footer {
+    background-color: #0a310d;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    height: 50px;
+}

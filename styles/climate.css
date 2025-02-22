@@ -1,6 +1,6 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f0f8ff;
+    background-color: grey;
     color: #333;
     margin: 0;
     padding: 0;
@@ -13,20 +13,23 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
+    height: 100px;
 }
 
 header h1 {
     margin: 0;
     font-size: 1.5em;
+    text-align: left;
+    margin-right: auto;
 }
 
 #header-logo {
-    max-height: 50px;
-    width: auto;
-    position: absolute;
+    max-height: 70px;
+    width: 60px;
+    position: relative;
     top: 10px;
     right: 10px;
+    margin-left: 5px;
 }
 
 nav ul {
@@ -48,10 +51,11 @@ nav ul li a {
 
 main {
     padding: 20px;
+    margin: 80px;
 }
 
 #hero {
-    background: #2df74f;
+    background: #0b5341;
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -81,7 +85,7 @@ main {
     flex: 1;
     margin: 10px;
     padding: 20px;
-    background: #e6f7ff;
+    background: #20253e;
     border-radius: 10px;
 }
 
@@ -90,7 +94,24 @@ main {
     padding: 20px;
     border-radius: 10px;
     text-align: center;
+    margin: 50px;
 }
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #052241; /* Button background color */
+    color: #ffffff; /* Button text color */
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0b2e54; /* Background color on hover */
+}
+
 
 footer {
     background-color: #0a310d;

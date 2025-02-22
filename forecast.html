@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClyneWeather</title>
+    <meta name="description" content="Weather and Climate Hub - Your source for accurate weather forecasts and in-depth climate knowledge. Stay informed about the latest climate trends and weather updates.">
+    <link rel="icon" href="favicon.ico/weather.jpg">
+    <meta property="og:title" content="Weather and Climate Hub">
+    <meta property="og:description" content="Your source for accurate weather forecasts and in-depth climate knowledge. Stay informed about the latest climate trends and weather updates.">
+    <meta property="og:image" content="images/og_image.jpg">
+    <meta property="og:url" content="https://yourwebsite.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Weather and Climate Hub">
+    <meta name="twitter:description" content="Your source for accurate weather forecasts and in-depth climate knowledge. Stay informed about the latest climate trends and weather updates.">
+    <meta name="twitter:image" content="images/twitter_image.jpg">
+    <link rel="stylesheet" href="styles/forecast.css">
+    <script src="scripts/forecast.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="images/logo.avif" alt="site logo" id="header-logo">
+        <h1>ClyneWeather</h1>
+        <nav>
+            <li><a href="climate.html">Home</a></li>
+            <li><a href="knowledge.html">Climate Knowledge</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </nav>
+    </header>
+    <main>
+        <section id="weather-form">
+            <label for="city">Enter City Name:</label>
+            <input type="text" id="city" name="city" required>
+            <button onclick="fetchWeather()">Get Weather</button>
+        </section>
+        <section id="weather-result">
+            <div id="weatherData"></div>
+            <div id="cityImage"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 ClyneWeather, Inc. "ClyneWeather" and sun design are registered trademarks of ClyneWeather, Inc. All Rights Reserved.<br>
+            <h4>Terms of Use | Privacy Policy | Cookie Policy</h4></p>
+    </footer>
+</body>
+</html>

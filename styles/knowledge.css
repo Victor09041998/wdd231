@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: grey;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color:  #0b550b;
+    color: white;
+    padding: 20px;
+    align-items: center;
+    display: flex;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5em;
+    text-align: left;
+    margin-right: auto;
+}
+
+#header-logo {
+    max-height: 70px;
+    width: 60px;
+    position: relative;
+    top: 10px;
+    right: 10px;
+    margin-left: 5px;
+}
+
+main {
+    padding: 20px;
+    margin: 100px;
+}
+
+#climate-topics ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#climate-topics ul li {
+    margin: 10px 0;
+}
+
+#climate-topics ul li a {
+    text-decoration: none;
+    color: #aacff8;
+}
+
+#climate-history {
+    margin-top: 20px;
+}
+
+#location {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 400px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#location::placeholder {
+    text-align: center;
+    font-size: 16px;
+    color: #ccc;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #071320;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #436255;
+}
+
+#climateHistoryData {
+    margin-top: 20px;
+}
+
+footer {
+    background-color: #0a310d;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
